@@ -277,12 +277,12 @@ namespace ColtenUniversity.Data
                 new Enrollment {
                     Student = alexander,
                     Course = chemistry,
-                    Grade = Grade.A
+                    Grade = Grade.I
                 },
                 new Enrollment {
                     Student = alexander,
                     Course = microeconomics,
-                    Grade = Grade.C
+                    Grade = Grade.W
                 },
                 new Enrollment {
                     Student = alexander,

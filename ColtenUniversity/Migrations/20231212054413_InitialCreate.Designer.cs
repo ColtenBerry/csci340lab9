@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ColtenUniversity.Migrations
 {
     [DbContext(typeof(SchoolContext))]
-    [Migration("20231211211948_InitialCreate")]
+    [Migration("20231212054413_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -50,6 +50,10 @@ namespace ColtenUniversity.Migrations
 
                     b.Property<decimal>("Budget")
                         .HasColumnType("money");
+
+                    b.Property<Guid>("ConcurrencyToken")
+                        .IsConcurrencyToken()
+                        .HasColumnType("TEXT");
 
                     b.Property<int?>("InstructorID")
                         .HasColumnType("INTEGER");
